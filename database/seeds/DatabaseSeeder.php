@@ -55,5 +55,27 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        DB::table('wheel_anti')->insert([
+            ['coeff' => 2, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 3, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 5, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 7, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 14, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 30, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+        ]);
+
+        DB::table('x100_anti')->insert([
+            ['coeff' => 2, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 3, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 10, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 15, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 20, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+            ['coeff' => 100, 'win' => 0, 'created_at' => now(), 'updated_at' => now()],
+        ]);
+
+        DB::table('random_keys')->insert([
+            ['name_key' => Str::random(16), 'games' => 0, 'created_at' => now(), 'updated_at' => now()],
+        ]);
     }
 }
