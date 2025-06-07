@@ -58,3 +58,13 @@ GoldenX Casino Script is your gateway to success in the booming online casino in
 **Contact us now to learn more about GoldenX Casino Script and start your journey in the world of online gaming!**
 
 
+
+## Polish Translation
+
+To automatically translate all Blade templates from Russian to Polish, install [translate-shell](https://github.com/soimort/translate-shell) and run:
+
+```bash
+scripts/auto_translate_ru_to_pl.py
+```
+
+The script uses online translation services to replace Russian text with Polish equivalents. Review the results before deploying.
