@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('password'),
             'balance' => 1000,
             'admin' => 1,
+            'sum_bet' => 0,
+            'win_games' => 0,
+            'lose_games' => 0,
+            'bonusCoin' => 0,
+            'bonusMine' => 0,
+            'minesStart' => 0,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
